@@ -3,10 +3,12 @@ import { Messages } from "../../lib/locale";
 export const English: Messages = {
   name: "English",
   helpTitle: "How to play",
-  help1: `Every day, there is a new Mystery Country. Your goal is to guess the
-  mystery country using the fewest number of guesses. Each incorrect guess
+  help1: `This is Globle Infinite. Once you guess the random Mystery Country, 
+  your guesses will reset and you can play again as much as you like.
+  Your goal is to guess the mystery country using the fewest number of guesses. Each incorrect guess
   will appear on the globe with a colour indicating how close it is to the
-  Mystery Country. The <b>hotter</b> the colour, the closer you are to the answer.`,
+  Mystery Country. The <b>hotter</b> the colour, the closer you are to the answer.
+  Make sure to check out the original game!`,
   help2: `For example, if the Mystery Country is <b>Japan</b>, then the following
   countries would appear with these colours if guessed:`,
   help3: `A new Mystery Country will be available every day!`,
@@ -17,9 +19,9 @@ export const English: Messages = {
   Aux1: `<b>["Click", "Tap"]</b> the globe to play!`,
   Aux2: "Have a question?",
   Aux3: "Check out the FAQ",
-  Footer1: "by The Abe Train",
+  Footer1: "by Finley Cooper - Orginal by The Abe Train",
   Footer2: "Enjoying the game?",
-  Footer3: "Buy me a coffee",
+  Footer3: "Buy me The Abe Train coffee",
   Loading: "Loading...",
   FAQTitle: "FAQ",
   q1: "1. How is the distance between the answer and my guess calculated?",

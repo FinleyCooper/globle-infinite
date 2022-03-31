@@ -8,11 +8,7 @@ countryData.sort((a, b) => {
 });
 
 function generateKeyNew(list: any[], day: string) {
-  const [year, month, date] = day.split("-");
-  const dayCode = Date.UTC(parseInt(year), parseInt(month) - 1, parseInt(date));
-  const SHUFFLE_KEY = process.env.REACT_APP_SHUFFLE_KEY || "1";
-  const key = Math.floor(dayCode / parseInt(SHUFFLE_KEY + "5")) % list.length;
-  return key;
+  return Math.floor(Math.random()*list.length)
 }
 
 const key = generateKeyNew(countryData, today);

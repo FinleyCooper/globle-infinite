@@ -77,8 +77,9 @@ export default function Guesser({ guesses, setGuesses, win, setWin }: Props) {
     let guessCountry = runChecks();
     if (guessCountry && answerCountry) {
       guessCountry["proximity"] = polygonDistance(guessCountry, answerCountry);
-      setGuesses([...guesses, guessCountry]);
+      guessCountry === answerCountry ? setGuesses([]) : setGuesses([...guesses, guessCountry]) 
       setGuessName("");
+
     }
   }
 
